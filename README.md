@@ -1,5 +1,7 @@
 # Claude – Hızlı Chat Sil
 
+**[English](#features) · [Türkçe](#türkçe)**
+
 A Tampermonkey userscript that adds a one-click delete button to every conversation in the Claude.ai sidebar — no confirmation dialogs, no page reloads.
 
 ## Features
@@ -13,9 +15,9 @@ A Tampermonkey userscript that adds a one-click delete button to every conversat
 ## Installation
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) for your browser
-2. Open the Tampermonkey dashboard → **Create a new script**
-3. Paste the contents of [`claude-hizli-sil.user.js`](./claude-hizli-sil.user.js) and save
-4. Navigate to [claude.ai](https://claude.ai) — the ✕ buttons will appear on hover in the sidebar
+2. **[Click here to install the script](https://github.com/t4r1k255/claude-quick-chat-deletion-script/raw/main/claude-hizli-sil.user.js)** and confirm with **Install**
+   (or create a new script in Tampermonkey and paste the contents of [`claude-hizli-sil.user.js`](./claude-hizli-sil.user.js))
+3. Navigate to [claude.ai](https://claude.ai) — the ✕ buttons will appear on hover in the sidebar
 
 ## How It Works
 
@@ -32,6 +34,16 @@ Hover over any conversation in the left sidebar and click the **✕** that appea
 ## Disclaimer
 
 > This script is an independent, community-built tool and is **not affiliated with, endorsed by, or associated with Anthropic in any way**. It interacts with Claude.ai's internal API endpoints, which may change at any time without notice and could cause the script to stop working or behave unexpectedly. Use at your own risk. The author takes no responsibility for any unintended deletion of conversations or other side effects.
+
+## Türkçe
+
+Claude.ai kenar çubuğundaki her sohbete tek tıkla silme butonu ekleyen bir Tampermonkey scripti. Onay penceresi ve sayfa yenileme yoktur.
+
+- Bir sohbetin üzerine gelince kırmızı **✕** butonu çıkar.
+- Silinen sohbet kimlikleri `localStorage`'da tutulur; sayfa yenilense bile silinen sohbetler kenar çubuğunda tekrar görünmez.
+- O an açık olan sohbeti silersen ana sayfaya yönlendirir.
+
+**Kurulum:** [Tampermonkey](https://www.tampermonkey.net/) kur, ardından **[scripti kurmak için buraya tıkla](https://github.com/t4r1k255/claude-quick-chat-deletion-script/raw/main/claude-hizli-sil.user.js)** ve **Install / Yükle**'ye bas.
 
 ## License
 
